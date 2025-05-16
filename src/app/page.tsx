@@ -56,9 +56,6 @@ export default function Home() {
 
       <footer className="mt-12 sm:mt-16 text-center text-gray-600 text-sm sm:text-base">
         <p>&copy; {new Date().getFullYear()} Juwelier Mühlbacher. Alle Rechte vorbehalten.</p>
-        <p>
-          <a href="/impressum" className="hover:text-yellow-700 hover:underline">Impressum</a> | <a href="/datenschutz" className="hover:text-yellow-700 hover:underline">Datenschutz</a>
-        </p>
       </footer>
     </div>
   );
