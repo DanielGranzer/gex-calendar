@@ -1,9 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import  Image from "next/image";
-
-import Logo from "./assets/mb-logo.png";
 
 const CalendlyWidget = dynamic(() => import("./components/calendlyWidget"), {
   ssr: false,
@@ -13,13 +10,6 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-100 to-amber-100 text-gray-800 p-4 sm:p-8 font-[family-name:var(--font-geist-sans)]">
       <header className="text-center mb-8 sm:mb-16">
-        <Image
-          src={Logo}
-          alt="Logo Juwelier Mühlbacher"
-          width={350}
-          height={150}
-          className="mx-auto mb-4 sm:mb-6 bg-gray-900 rounded-lg"
-        />
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 sm:mb-4 text-gold font-playfair">Goldexperten Tage</h1>
         <p className="text-xl sm:text-2xl md:text-3xl text-gray-700">Juwelier Mühlbacher aus Regensburg</p>
         <p className="text-base sm:text-lg text-gray-600 mt-2">Ihr vertrauenswürdiger Partner für exklusiven Schmuck und Goldankauf.</p>
@@ -59,7 +49,7 @@ export default function Home() {
           <p className="text-base sm:text-lg text-gray-700 mb-1 sm:mb-2">Juwelier Mühlbacher</p>
           <p className="text-base sm:text-lg text-gray-700 mb-1 sm:mb-2">Musterstraße 123</p>
           <p className="text-base sm:text-lg text-gray-700 mb-2 sm:mb-4">93047 Regensburg</p>
-          <p className="text-base sm:text-lg text-gray-700 mb-1 sm:mb-2">Telefon: <a href="tel:+49 941 5027970" className="hover:text-yellow-600">+49 941 000000</a></p>
+          <p className="text-base sm:text-lg text-gray-700 mb-1 sm:mb-2">Telefon: <a href="tel:+49 941 5027970" className="hover:text-yellow-600">+49 941 5027970</a></p>
           <p className="text-base sm:text-lg text-gray-700">E-Mail: <a href="mailto:info@juwelier-muehlbacher.de" className="hover:text-yellow-600">info@juwelier-muehlbacher.de</a></p>
         </section>
       </main>
