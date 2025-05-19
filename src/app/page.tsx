@@ -11,18 +11,18 @@ const CalendlyWidget = dynamic(() => import("./components/calendlyWidget"), {
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-100 to-amber-100 text-gray-800 p-4 sm:p-8 font-[family-name:var(--font-geist-sans)]">
-      <header className="text-center mb-8 sm:mb-16">
-        <div className="w-2/3 mx-auto mb-4 sm:mb-6 md:w-1/3 lg:w-1/3">
+      <header className="flex flex-col items-center text-center mb-8 sm:mb-16">
+        <div className="flex w-2/3 mx-auto md:w-1/3 lg:w-1/3 items-center justify-center">
           <Image
             src={Logo}
             alt="Goldexperten Logo"
-            width={120}
-            height={120}
-            className="mb-4 sm:mb-6"
+            width={150}
+            height={100}
+            className=""
             layout="responsive"
           />
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 sm:mb-4 text-gold font-playfair">Goldexperten Tage</h1>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gold font-playfair mb-6 -mt-2">Tage {new Date().getFullYear()}</h1>
         <p className="text-xl sm:text-2xl md:text-3xl text-gray-700">Buchen Sie jetzt einen Termin bei Ihrem Goldexperten</p>
         <p className="text-base sm:text-lg text-gray-600 mt-2">Ihr vertrauenswürdiger Partner für exklusiven Schmuck und Goldankauf.</p>
       </header>
